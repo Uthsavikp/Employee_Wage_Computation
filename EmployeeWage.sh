@@ -12,7 +12,7 @@ else
 	echo "Employee is Absent"
 fi
 
-#To Calculate Daily Employee Wage
+
 isPresent=1;
 randomCheck=$((RANDOM%2));
 
@@ -25,7 +25,7 @@ else
 	salary=0;
 fi
 
-#To Add Part Time Employee And Wage
+
 isPartTime=1;
 isFullTime=2;
 empRatePerHr=20;
