@@ -24,3 +24,20 @@ then
 else
 	salary=0;
 fi
+
+#To Add Part Time Employee And Wage
+isPartTime=1;
+isFullTime=2;
+empRatePerHr=20;
+randomcheck=$((RANDOM%3))
+
+if [[ $isFullTime -eq $randomCheck ]]
+then
+	empHrs=8;
+elif [[ $isPartTime -eq $randomCheck ]]
+then
+	empHrs=4;
+else
+	empHrs=0;
+fi
+salary=$(($empHrs*$empRatePerHr))
