@@ -144,4 +144,4 @@ do
 done
 
 echo "total wage - " $totalWage
-#echo "daily wage - " $dailyWage
+echo "daily wage - " $dailyWage
