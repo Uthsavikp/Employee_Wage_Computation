@@ -129,3 +129,19 @@ getWorkHours() {
 }
 getWorkHours
 
+#To Store Daily Wage Along with Total wage
+#calculate wage for each day
+totalWorkingHours=0
+totalWorkingDays=0
+totalWage=0
+while [[ $totalWorkingDays -lt $numWorkingDays ]]
+do
+        ((totalWorkingDays++))
+        workHours=$( getWorkHours $((RANDOM%3)) );
+        dailyWage=$((workHours*EMP_RATE_PER_HR));
+        totalWorkingHours=$((totalWorkingHours+workHours));
+        totalWage=$((totalWage+dailyWage));
+done
+
+echo "total wage - " $totalWage
+#echo "daily wage - " $dailyWage
