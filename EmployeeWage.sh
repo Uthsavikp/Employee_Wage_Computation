@@ -145,3 +145,7 @@ done
 
 echo "total wage - " $totalWage
 echo "daily wage - " $dailyWage
+
+#To Store Day And Daily Wage Along with Total wage
+
+echo "day -" ${#dailyWage[@]}
